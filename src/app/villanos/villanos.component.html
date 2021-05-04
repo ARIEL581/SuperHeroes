@@ -1,0 +1,30 @@
+<h1> Súper VIllano {{ nombre }}</h1>
+
+<dl>
+  <td> nombre: </td>
+  <dd>{{nombre}}</dd>
+
+  <td> edad: </td>
+  <dd>{{edad}}</dd>
+
+  <td> poder: </td>
+  <dd>{{poder}}</dd>
+
+  <td> Tipo de poder: </td>
+  <dd>{{descripcion}}</dd>
+
+  <td> ID Villano: </td>
+  <dd>{{id}}</dd>
+
+  <td> Mayusculas: </td>
+  <dd>{{nombreMayusculas}}</dd>
+
+ <td>
+    Incremento de poder:<button (click)= "acumular(base)">+{{base}}</button>
+</td> 
+
+</dl>
+<button (click)="cambiarNombre()">Cambiar Nombre</button>
+<button (click)="cambiarEdad()">Cambiar Edad</button>
+<button (click)="cambiarDescripcion()">Cambiar tipo de Poder</button>
+<button (click)="cambiarId()">Cambiar ID del Villano</button>
